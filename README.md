@@ -2,7 +2,6 @@
 
 ![Tests and Release](https://github.com/sanjP10/multimethod/workflows/Tests%20and%20Release/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanjP10/multimethod/workflows/CodeQL/badge.svg)
-![Build and Publish](https://github.com/sanjP10/multimethod/workflows/Build%20and%20Publish/badge.svg)
 
 This module that enables the use of the same function name but with variable dispatch keys.
 This allows different object types or values to execute different functions but with the same name.
