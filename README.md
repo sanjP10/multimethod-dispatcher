@@ -1,4 +1,4 @@
-# Multimethod
+# Multimethod-dispatcher
 
 ![Tests and Release](https://github.com/sanjP10/multimethod/workflows/Tests%20and%20Release/badge.svg?branch=master)
 ![CodeQL](https://github.com/sanjP10/multimethod/workflows/CodeQL/badge.svg)
