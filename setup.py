@@ -24,7 +24,10 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers"
     ],
+    keywords="multimethod dispatcher functional-programming",
     extras_require={
         "dev": [
             "pylint>=2.6",
