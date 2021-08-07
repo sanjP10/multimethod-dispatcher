@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+### Updated
+* Updated `master` branch to `main`
+
 ## 1.0.1
 
 ### Added

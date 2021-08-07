@@ -48,7 +48,7 @@ jobs:
     needs:
       - tests
       - validate
-    if: ${{ github.ref == 'refs/heads/master' }}
+    if: ${{ github.ref == 'refs/heads/main' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
