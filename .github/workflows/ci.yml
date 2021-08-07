@@ -9,12 +9,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup Go
-        uses: actions/setup-go@v2
+      - name: Release
+        uses: sanjP10/release-action@1.0.0
+        id: release
         with:
-          go-version: '^1.15.7'
-      - run: GO111MODULE=on go get -u github.com/sanjP10/release
-      - run: release validate -username ${{ github.actor }} -password ${{ secrets.PERSONAL_ACCESS_TOKEN }} -repo ${{ github.repository }} -changelog CHANGELOG.md -hash ${{ github.sha }} -provider github
+          changelog-file-location: CHANGELOG.md
+          operation: validate
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
 
   tests:
     runs-on: ${{ matrix.os }}
@@ -54,9 +55,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Setup Go
-        uses: actions/setup-go@v2
+      - name: Release
+        uses: sanjP10/release-action@1.0.0
+        id: release
         with:
-          go-version: '^1.15.7'
-      - run: GO111MODULE=on go get -u github.com/sanjP10/release
-      - run: release create -username ${{ github.actor }} -password ${{ secrets.PERSONAL_ACCESS_TOKEN }} -repo ${{ github.repository }} -changelog CHANGELOG.md -hash ${{ github.sha }} -provider github
+          changelog-file-location: CHANGELOG.md
+          operation: create
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
